@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import FormularioPedido from './FormularioPedido.jsx';
 
 const productosCocina = [
-  { id: 1, nombre: 'Sartén antiadherente', descripcion: 'Ideal para cocinar.', precio: '$40', imagen: 'Loncheras.jpg' },
-  { id: 2, nombre: 'Set cuchillos', descripcion: 'Corte profesional.', precio: '$55', imagen: 'Loncheras.jpg' },
+  { id: 1, nombre: 'Sartén antiadherente', descripcion: 'Ideal para cocinar.', precio: '$40', imagen: './Loncheras.jpg', alt: 'Lonchera' },
+  { id: 2, nombre: 'Set cuchillos', descripcion: 'Corte profesional.', precio: '$55', imagen: './Loncheras.jpg', alt: 'Lonchera' },
 ];
 
 function Cocina() {

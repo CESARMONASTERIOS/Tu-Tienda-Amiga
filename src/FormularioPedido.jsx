@@ -34,14 +34,14 @@ function FormularioPedido({ producto }) {
         <div className="mb-3">
           <label className="form-label">Producto *</label>
           <input
-            type="text"
-            name="producto"
-            className="form-control"
-            placeholder="Nombre del producto que deseas"
-            value={producto ? producto.nombre : ''}
-            readOnly={!!producto}
-            required
-          />
+          type="text"
+          name="producto"
+          className="form-control"
+          placeholder="Nombre del producto que deseas"
+          defaultValue={producto ? producto.nombre : ''}
+          readOnly={!!producto}
+        />
+
         </div>
 
         <div className="mb-3">
