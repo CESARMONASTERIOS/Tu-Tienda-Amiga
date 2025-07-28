@@ -10,18 +10,25 @@ const productosTenis = [
 function Estrellas({ n }) {
   return (
     <p aria-label={`${n} estrellas de 5`} role="img" style={{ color: '#ffbf00', fontSize: '1.2rem', margin: 0 }}>
-      {'★'.repeat(n)}
-      {'☆'.repeat(5 - n)}
+      {'★'.repeat(n)}{'☆'.repeat(5 - n)}
     </p>
   );
 }
 
 function Tenis() {
   const [filtro, setFiltro] = useState('');
+  const [productoSeleccionado, setProductoSeleccionado] = useState(null);
 
   const productosFiltrados = productosTenis.filter(p =>
     p.nombre.toLowerCase().includes(filtro.toLowerCase())
   );
+
+  const handleSeleccionar = (producto) => {
+    setProductoSeleccionado(producto);
+    setTimeout(() => {
+      document.getElementById('formulario')?.scrollIntoView({ behavior: 'smooth' });
+    }, 100);
+  };
 
   return (
     <div className="container my-5 fondo-tenis p-4 rounded-3 contenedor-pagina">
@@ -44,7 +51,12 @@ function Tenis() {
                 <h5 className="card-title">{prod.id}. {prod.nombre}</h5>
                 <p className="fw-bold text-primary">{prod.precio}</p>
                 <Estrellas n={prod.rating} />
-                <a href="#formulario" className="btn btn-pedir mt-3">Pedir</a>
+                <button
+                  onClick={() => handleSeleccionar(prod)}
+                  className="btn btn-pedir mt-3"
+                >
+                  Pedir
+                </button>
               </div>
             </div>
           </div>
