@@ -1,0 +1,43 @@
+.fondo-home {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(203, 26, 26);
+}
+
+.productos-recomendados .card {
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.productos-recomendados .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.btn-outline-light {
+  border: 2px solid white;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-light:hover {
+  background-color: white;
+  color: #764ba2;
+}
+
+/* Carrusel */
+.carousel img {
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Badges */
+.badge {
+  margin-top: 8px;
+}
+
+/* Testimonios */
+.testimonios {
+  background: #f8f9fa;
+}

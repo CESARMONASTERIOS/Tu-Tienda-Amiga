@@ -1,0 +1,55 @@
+.formulario-pedido {
+  max-width: 480px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+  transition: box-shadow 0.3s ease;
+}
+
+.formulario-pedido:hover {
+  box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+}
+
+.formulario-pedido h3 {
+  color: #0d6efd;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.form-label {
+  font-weight: 600;
+  color: #444;
+}
+
+.form-control {
+  border-radius: 10px;
+  border: 1.8px solid #ced4da;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 8px rgba(13, 110, 253, 0.4);
+  outline: none;
+}
+
+.btn-success {
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 0.7px;
+  padding: 0.6rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #0b5ed7;
+  box-shadow: 0 6px 12px rgba(11, 94, 215, 0.5);
+}

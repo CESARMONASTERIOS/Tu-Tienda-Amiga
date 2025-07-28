@@ -1,0 +1,51 @@
+.contenedor-pagina {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem 3rem 1rem;
+}
+
+.tarjeta {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  background: white;
+}
+
+.tarjeta:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 25px rgba(13, 110, 253, 0.3);
+}
+
+.tarjeta img {
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Botón "Pedir" en tarjetas productos */
+.btn-pedir {
+  border-radius: 25px;
+  padding: 0.5rem 1.2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  background-color: #0d6efd;
+  border: none;
+  color: white;
+}
+
+.btn-pedir:hover {
+  background-color: #084298;
+  box-shadow: 0 4px 12px rgba(8, 66, 152, 0.7);
+}
+
+/* Input búsqueda */
+.form-control {
+  border-radius: 8px;
+}
+
+/* Estrellas */
+p[role="img"] {
+  color: #ffbf00;
+  font-size: 1.2rem;
+  margin: 0;
+}

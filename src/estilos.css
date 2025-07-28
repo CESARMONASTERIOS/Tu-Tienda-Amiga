@@ -1,0 +1,184 @@
+/* Fondo general */
+.fondo {
+  background: linear-gradient(to bottom right, #bedeff, #ffffff);
+  min-height: 100vh;
+  padding-bottom: 100px;
+}
+
+/* Fondo específico para cada sección */
+.fondo-tenis {
+  background: linear-gradient(135deg, #00bbff, #00dcf5);
+  min-height: 100vh;
+}
+
+.fondo-bano {
+  background: linear-gradient(135deg, #f6d365, #fda085);
+  min-height: 100vh;
+}
+
+.fondo-cocina {
+  background: linear-gradient(135deg, #fbc1cc, #fa99b2);
+  min-height: 100vh;
+}
+
+.fondo-cuarto {
+  background: linear-gradient(135deg, #c3cfe2, #c3cfe2);
+  min-height: 100vh;
+}
+
+.fondo-sala {
+  background: linear-gradient(135deg, #f093fb, #f5576c);
+  min-height: 100vh;
+}
+
+.fondo-ropa {
+  background: linear-gradient(135deg, #0d6efd, #667eea);
+  min-height: 100vh;
+}
+
+/* Tarjetas */
+.tarjeta {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  background: white;
+}
+
+.tarjeta:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 25px rgba(13, 110, 253, 0.3);
+}
+
+.tarjeta img {
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Botones */
+.btn-pedir {
+  border-radius: 25px;
+  padding: 0.5rem 1.2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  background-color: #0d6efd;
+  border: none;
+  color: white;
+}
+
+.btn-pedir:hover {
+  background-color: #084298;
+  box-shadow: 0 4px 12px rgba(8, 66, 152, 0.7);
+}
+
+/* Contenedor general para productos y formulario */
+.contenedor-pagina {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem 3rem 1rem;
+}
+
+/* Formulario pedido */
+.formulario-pedido {
+  max-width: 480px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+  transition: box-shadow 0.3s ease;
+}
+
+.formulario-pedido:hover {
+  box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+}
+
+.formulario-pedido h3 {
+  color: #0d6efd;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.form-label {
+  font-weight: 600;
+  color: #444;
+}
+
+.form-control {
+  border-radius: 10px;
+  border: 1.8px solid #ced4da;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 8px rgba(13, 110, 253, 0.4);
+  outline: none;
+}
+
+/* Botón enviar formulario */
+.btn-success {
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 0.7px;
+  padding: 0.6rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #0b5ed7;
+  box-shadow: 0 6px 12px rgba(11, 94, 215, 0.5);
+}
+
+/* Navbar personalizado */
+.navbar-custom {
+  background: #ffffff;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+  border-radius: 8px;
+  margin: 1rem 0;
+  user-select: none;
+  transition: background 0.3s ease;
+}
+
+.navbar-custom:hover {
+  background: #f8f9fa;
+}
+
+.btn-nav {
+  border: 2px solid #007bff;
+  color: #007bff;
+  font-weight: 600;
+  padding: 0.5rem 1.3rem;
+  border-radius: 30px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  box-shadow: 0 0 5px transparent;
+}
+
+.btn-nav:hover {
+  background: #007bff;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.5);
+  text-decoration: none;
+}
+
+/* WhatsApp flotante */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1100;
+  background-color: #25d366;
+  border-radius: 50%;
+  padding: 14px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+}
