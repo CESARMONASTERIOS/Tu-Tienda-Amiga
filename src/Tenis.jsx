@@ -52,7 +52,7 @@ function Tenis() {
       </div>
 
       <div id="formulario" className="my-5">
-        <FormularioPedido />
+        <FormularioPedido producto={{productoSeleccionado}}/>
       </div>
     </div>
   );
