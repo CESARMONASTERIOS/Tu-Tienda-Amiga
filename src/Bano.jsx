@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import FormularioPedido from './FormularioPedido.jsx';
 
 const productosBano = [
-  { id: 1, nombre: 'Juego de toallas', descripcion: 'Suaves y absorbentes.', precio: '$25', imagen: 'https://images.unsplash.com/photo-1618220179428-22790f2b7634?auto=format&fit=crop&w=500&q=80' },
-  { id: 2, nombre: 'Set dispensador jabón', descripcion: 'Moderno y elegante.', precio: '$15', imagen: 'https://images.unsplash.com/photo-1586668920421-974d6803a5a6?auto=format&fit=crop&w=500&q=80' },
+  { id: 1, nombre: 'Juego de toallas', descripcion: 'Suaves y absorbentes.', precio: 'Bs. 25', imagen: 'https://images.unsplash.com/photo-1618220179428-22790f2b7634?auto=format&fit=crop&w=500&q=80' },
+  { id: 2, nombre: 'Set dispensador jabón', descripcion: 'Moderno y elegante.', precio: 'Bs. 15', imagen: 'https://images.unsplash.com/photo-1586668920421-974d6803a5a6?auto=format&fit=crop&w=500&q=80' },
 ];
 
 function Bano() {

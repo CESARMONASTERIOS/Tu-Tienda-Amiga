@@ -3,9 +3,9 @@ import FormularioPedido from './FormularioPedido.jsx';
 import { Carousel } from 'react-bootstrap';
 
 const productosRecomendados = [
-  { id: 1, nombre: 'Tenis Running Pro', precio: '$80', imagen: 'https://images.unsplash.com/photo-1590080877777-1b36ee83e0be?auto=format&fit=crop&w=400&q=80' },
-  { id: 2, nombre: 'Set cuchillos', precio: '$55', imagen: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80' },
-  { id: 3, nombre: 'Alfombra decorativa', precio: '$60', imagen: 'https://images.unsplash.com/photo-1549187774-b4e9b0445b64?auto=format&fit=crop&w=400&q=80' },
+  { id: 1, nombre: 'Tenis Running Pro', precio: 'Bs. 80', imagen: 'https://images.unsplash.com/photo-1590080877777-1b36ee83e0be?auto=format&fit=crop&w=400&q=80' },
+  { id: 2, nombre: 'Set cuchillos', precio: 'Bs. 55', imagen: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80' },
+  { id: 3, nombre: 'Alfombra decorativa', precio: 'Bs. 60', imagen: 'https://images.unsplash.com/photo-1549187774-b4e9b0445b64?auto=format&fit=crop&w=400&q=80' },
 ];
 
 function Home() {

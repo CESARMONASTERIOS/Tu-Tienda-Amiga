@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import FormularioPedido from './FormularioPedido.jsx';
 
 const productosTenis = [
-  { id: 1, nombre: 'Tenis Running Pro', precio: '$80', rating: 5, imagen: 'https://images.unsplash.com/photo-1590080877777-1b36ee83e0be?auto=format&fit=crop&w=400&q=80' },
-  { id: 2, nombre: 'Tenis Casual', precio: '$60', rating: 4, imagen: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=400&q=80' },
-  { id: 3, nombre: 'Tenis Fitness', precio: '$65', rating: 4, imagen: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=400&q=80' },
+  { id: 1, nombre: 'Tenis Running Pro', precio: 'Bs. 15', rating: 5, imagen: 'https://images.unsplash.com/photo-1590080877777-1b36ee83e0be?auto=format&fit=crop&w=400&q=80' },
+  { id: 2, nombre: 'Tenis Casual', precio: 'Bs. 60', rating: 4, imagen: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=400&q=80' },
+  { id: 3, nombre: 'Tenis Fitness', precio: 'Bs. 65', rating: 4, imagen: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=400&q=80' },
 ];
 
 function Estrellas({ n }) {
