@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import FormularioPedido from './FormularioPedido.jsx';
 
 const productosTenis = [
-  { id: 1, nombre: 'Tenis Running Pro', precio: 'Bs. 15', rating: 5, imagen: './Tenis & Calzados/CalzadoG.png' },
-  { id: 2, nombre: 'Tenis Casual', precio: 'Bs. 60', rating: 4, imagen: './CalzadoG.png' },
-  { id: 3, nombre: 'Tenis Fitness', precio: 'Bs. 65', rating: 4, imagen: './CalzadoG.png' },
+  { id: 1, nombre: 'Calzados Peruanos de Cuero', precio: 'Bs. 180', rating: 5, imagen: 'public/Tenis & Calzados/CalzadoG.jpg' },
+  { id: 2, nombre: 'Calzados Pequeños-Peruanos de cuero', precio: 'Bs. 165', rating: 4, imagen: 'public/Tenis & Calzados/CalzadoP.jpg' },
+  { id: 3, nombre: 'Calzados Peruanos de Cuero', precio: 'Bs. 180', rating: 4, imagen: 'public/Tenis & Calzados/CalzadoG.jpg' },
 ];
 
 function Estrellas({ n }) {
