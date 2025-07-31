@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import FormularioPedido from './FormularioPedido.jsx';
 
 const productosTenis = [
-  { id: 1, nombre: 'Tenis Running Pro', precio: 'Bs. 15', rating: 5, imagen: 'https://images.unsplash.com/photo-1590080877777-1b36ee83e0be?auto=format&fit=crop&w=400&q=80' },
-  { id: 2, nombre: 'Tenis Casual', precio: 'Bs. 60', rating: 4, imagen: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=400&q=80' },
-  { id: 3, nombre: 'Tenis Fitness', precio: 'Bs. 65', rating: 4, imagen: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=400&q=80' },
+  { id: 1, nombre: 'Tenis Running Pro', precio: 'Bs. 15', rating: 5, imagen: './Tenis & Calzados/CalzadoG.png' },
+  { id: 2, nombre: 'Tenis Casual', precio: 'Bs. 60', rating: 4, imagen: './CalzadoG.png' },
+  { id: 3, nombre: 'Tenis Fitness', precio: 'Bs. 65', rating: 4, imagen: './CalzadoG.png' },
 ];
 
 function Estrellas({ n }) {
@@ -32,7 +32,7 @@ function Tenis() {
 
   return (
     <div className="container my-5 fondo-tenis p-4 rounded-3 contenedor-pagina">
-      <h2 className="text-center mb-4 text-white">Catálogo de Tenis</h2>
+      <h2 className="text-center mb-4 text-white">Catálogo de Tenis & Calzado</h2>
 
       <input
         type="text"
