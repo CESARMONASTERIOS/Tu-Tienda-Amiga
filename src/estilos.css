@@ -182,3 +182,32 @@
   display: flex;
   align-items: center;
 }
+
+.hero-home {
+  background: linear-gradient(120deg, #007cf0, #00dfd8);
+  min-height: 80vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-size: cover;
+  background-position: center;
+  animation: gradientMove 10s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.card.tarjeta {
+  transition: transform 0.4s ease;
+  border-radius: 15px;
+}
+
+.card.tarjeta:hover {
+  transform: scale(1.05);
+}
+
+.carousel .carousel-item img {
+  border-radius: 15px;
+}

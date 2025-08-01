@@ -5,7 +5,7 @@ const productosCocina = [
   { id: 1, nombre: 'Cuchillo mediano, marca Tramontina', descripcion: 'Ideal para cocinar.', precio: 'Bs. 20', imagen: 'public/Cocina/Cuchillo mediano.jpg', alt: 'Cuchillo mediano' },
   { id: 2, nombre: 'Cuchillo mediano con mango cafe, marca Tramontina', descripcion: 'Ideal para cocinar.', precio: 'Bs. 22', imagen: 'public/Cocina/Cuchillo mediano2.jpg', alt: 'Cuchillo mediano 2' },
   { id: 3, nombre: 'Cuchillo de 7 pulgadas, marca Tramontina', descripcion: 'Ideal para cocinar.', precio: 'Bs. 28', imagen: 'public/Cocina/Cuchillo de 7 pul.jpg', alt: 'Cuchillo de 7 pulgadas' },
-  { id: 4, nombre: 'Cuchillo pequeño', descripcion: 'Ideal para cocinar.', precio: 'Bs. 14', imagen: 'public/Cocina/Cuchillo pequeño.jpg', alt: 'Cuchillo pequeño' },
+  { id: 4, nombre: 'Cuchillo pequeño', descripcion: 'Ideal para cocinar.', precio: 'Bs. 14', imagen: 'public/Cocina/Cuchillo pequeno.jpg', alt: 'Cuchillo pequeno' },
   { id: 5, nombre: 'Docena de Cucharas, marca Tramontina', descripcion: 'Ideal para cocinar.', precio: 'Bs. 30', imagen: 'public/Cocina/Cuchara.jpg', alt: 'Cuchara' },
   { id: 6, nombre: 'Cucharon', descripcion: 'Ideal para cocinar.', precio: 'Bs. 20', imagen: 'public/Cocina/Cucharon.jpg', alt: 'Cucharon' },
   { id: 6, nombre: 'Cucharon, marca Tramontina', descripcion: 'Ideal para cocinar.', precio: 'Bs. 20', imagen: 'public/Cocina/Cucharon.jpg', alt: 'Cucharon' },

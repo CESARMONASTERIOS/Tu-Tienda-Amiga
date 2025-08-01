@@ -1,14 +1,37 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
 function FormularioPedido({ producto }) {
+  const formRef = useRef();
+
+  const enviarWhatsApp = (e) => {
+    e.preventDefault(); // Evita el envío normal
+
+    const form = formRef.current;
+    const nombre = form.nombre.value;
+    const email = form.email.value;
+    const productoNombre = form.producto.value;
+    const mensajeAdicional = form.mensaje.value;
+
+    const mensaje = `Hola, quiero hacer un pedido:\n\n👤 Nombre: ${nombre}\n📧 Correo: ${email}\n📦 Producto: ${productoNombre}\n📝 Mensaje: ${mensajeAdicional}`;
+
+    const numero = '59162566592';
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+
+    window.open(url, '_blank');
+  };
+
   return (
     <div className="formulario-pedido shadow p-4 rounded bg-light" id="formulario">
       <h3>Haz tu pedido</h3>
+
       <form
+        ref={formRef}
         action="https://formsubmit.co/tutiendafavoritasi@gmail.com"
         method="POST"
       >
         <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="https://tutiendafavorita.netlify.app/gracias" />
+
         <div className="mb-3">
           <label className="form-label">Nombre completo *</label>
           <input
@@ -32,17 +55,16 @@ function FormularioPedido({ producto }) {
         </div>
 
         <div className="mb-3">
-  <label className="form-label">Producto *</label>
-  <input
-    type="text"
-    name="producto"
-    className="form-control"
-    placeholder="Nombre del producto que deseas"
-    defaultValue={producto ? producto.nombre : ''}
-    readOnly={!!producto}
-    required
-  />
-
+          <label className="form-label">Producto *</label>
+          <input
+            type="text"
+            name="producto"
+            className="form-control"
+            placeholder="Nombre del producto que deseas"
+            defaultValue={producto ? producto.nombre : ''}
+            readOnly={!!producto}
+            required
+          />
         </div>
 
         <div className="mb-3">
@@ -55,11 +77,14 @@ function FormularioPedido({ producto }) {
           ></textarea>
         </div>
 
-        <input type="hidden" name="_next" value="https://tusitio.com/gracias" />
-
-        <button type="submit" className="btn btn-success w-100">
-          Enviar pedido
-        </button>
+        <div className="d-grid gap-2">
+          <button type="submit" className="btn btn-success">
+            Enviar por correo
+          </button>
+          <button type="button" className="btn btn-outline-success" onClick={enviarWhatsApp}>
+            Enviar por WhatsApp
+          </button>
+        </div>
       </form>
     </div>
   );

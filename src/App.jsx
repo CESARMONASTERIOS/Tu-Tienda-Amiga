@@ -8,6 +8,7 @@ import Sala from './Sala';
 import Bano from './Bano';
 import Ropa from './Ropa';
 import Navbar from './Navbar';
+import Gracias from './Gracias.jsx';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/sala" element={<Sala />} />
         <Route path="/bano" element={<Bano />} />
         <Route path="/ropa" element={<Ropa />} />
+        <Route path="/gracias" element={<Gracias />} />
       </Routes>
     </>
   );
